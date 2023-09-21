@@ -1,0 +1,196 @@
+html {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ /* Header */
+ 
+ .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(192, 162, 81);
+    padding: 0 10%;
+ }
+ 
+ .header li {
+    display: inline;
+    color:rgb(69, 43, 0);
+ }
+ 
+ .header .logo {
+    flex-grow: 1;
+    color: rgb(69, 43, 0);
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 1.2rem;
+    font-weight: bold;
+ }
+
+ /* Banner */
+
+ .banner {
+   background: url("../img/discord.jpg");
+   height: 450px;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: 'UnifrakturMaguntia';
+ }
+
+ .banner h1 {
+   /*background-color: ; */
+   width: 100px;
+   text-align: center;
+   color: white;
+   /*margin-top: ;
+   margin-left: ;
+   border-top: ;
+   border-bottom: ;*/
+ }
+
+ .video {
+   text-align: center;
+   margin-top: 100px;
+   color:white ;
+   font-family: 'UnifrakturMaguntia';
+   letter-spacing: 0.15rem;
+ }
+
+ .video-container {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   justify-content: left;
+   background-color: rgb(6, 4, 11);
+   height: 450px;
+ }
+  .video-info {
+   margin-top: 5px;
+   text-align: left;
+   padding-left: 80px;
+   width: 300px;
+ }
+  .video-info h2 {
+   color: rgb(159, 134, 192);
+   width: 300px;
+ }
+  .video-info p {
+   color: white;
+   width: 300px;
+ }
+  .video-youtube {
+   margin: 20px;
+   position: relative;
+   width: 660px;
+ }
+  .video-youtube iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+ }
+  .video-thumbnails {
+   display: flex;
+   flex-direction: column;
+   justify-content: left;
+   align-items: center;
+   margin-left: 10px;
+   width: 250px;
+ }
+  .video-thumbnails img {
+   width: 178px;
+   height: 100px;
+   margin: 22px;
+   border: 3px solid rgb(224, 177, 203);
+   cursor: pointer;
+ }
+  .video-thumbnails img:hover {
+   border: 3px solid rgb(159, 134, 192);
+   filter: brightness(1.5);
+ }
+
+/*about*/
+.about {
+   text-align: center;
+   margin-top: 100px;
+   color:white ;
+   font-family: 'UnifrakturMaguntia';
+   letter-spacing: 0.15rem;
+}
+
+.aboutCards {
+  text-align: center;
+}
+
+.aboutCards .col {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.mempic {
+  width: 200px;
+} 
+
+.aboutCards p {
+  font-size: 16px;
+  color: rgb(159, 134, 192);
+}
+ 
+.aboutCards a {
+  background-color: white;
+  color: rgb(35, 25, 66);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.03px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+ margin-bottom: 10px;
+ /*border: 2px solid rgb(224, 177, 203);*/
+ border-radius: 8px;
+}
+
+.aboutCards a:hover {
+ background-color: rgb(224, 177, 203);
+}
+
+/*contact*/
+.contact {
+  text-align: center;
+   margin-top: 100px;
+   color:black ;
+   font-family: 'UnifrakturMaguntia';
+   letter-spacing: 0.15rem;
+}
+
+.contact-container {
+
+}
+
+.image-container {
+
+}
+
+.image-container img {
+  width: 300px;
+}
+
+.map-container {
+  filter: hue-rotate(3.142rad);                  
+}
+
+.map-container iframe {
+
+}
+
+/*footer*/
+.footer-left {
+  color: black;
+  font-size: 14px;
+}
+
+.social-icons svg {
+  fill: black;
+}
