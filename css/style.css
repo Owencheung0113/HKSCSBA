@@ -27,7 +27,7 @@ html {
  }
 
  /* Banner */
-
+/*
  .banner {
    background: url("../img/discord.jpg");
    height: 450px;
@@ -50,6 +50,41 @@ html {
    border-top: ;
    border-bottom: ;*/
  }
+
+ /* Photo Slideshow */
+.slideshow-container {
+  position: relative;
+  padding-top: 20px;
+  }
+  
+  .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  }
+  
+  .next {
+  right: 0;
+  }
+  
+  .fade {
+  animation-name: fade;
+  animation-duration: 3s;
+  }
+  
+  @keyframes fade {
+  from {opacity: 0.4;}
+  to {opacity: 1;}
+  }
+  
 
  .video {
    text-align: center;
