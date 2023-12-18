@@ -41,7 +41,7 @@ html {
  }
 
  .banner h1 {
-   /*background-color: ; */
+   /*background-color: ; 
    width: 100px;
    text-align: center;
    color: white;
@@ -70,7 +70,16 @@ html {
   border-radius: 0 3px 3px 0;
   user-select: none;
   }
-  
+
+  @media only screen and (min-device-width: 390px) and (max-device-width: 480px) {
+    .slideshow-container {
+    width: 109.2%;
+    }
+    .header {
+    width: 89.2%;
+    }
+  }
+
   .next {
   right: 0;
   }
@@ -214,10 +223,6 @@ html {
 
 .map-container {
   filter: hue-rotate(3.142rad);                  
-}
-
-.map-container iframe {
-
 }
 
 /*footer*/
