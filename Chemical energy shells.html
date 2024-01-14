@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ammunition Museum</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="icon" href="./img/001.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans">
+    </head>
+    <body>
+        <!--header-->
+        <nav class="header">
+            <a href="index.html" class="logo">Ammunition Museum</a>
+            <ul>
+                <li><a href="Kinetic energy shells.html" class="bar">Kinetic energy shells</a></li>
+                <li><a href="Chemical energy shells.html" class="bar">Chemical energy shells</a></li>
+            </ul>    
+        </nav>
+
+        <!--ammunition type-->
+        <div class="ammo">
+            <h1>Chemical energy shells</h1>
+            <p>
+                <b>Chemical energy shells</b>
+                deal damage based on a chemical reaction, and unlike kinetic shells, their ability to penetrate and deal damage are unaffected by the shell's velocity. This means that target distance often doesn't affect the round's effectiveness. However, this also means that enemy tanks spaced and composite armour can be much more effective at preventing the damage, depending on the shell type used. Many chemical shells utilise extremely sensitive fuses and will detonate upon touching anything, while almost none of them can be fired through solid obstacles. Many chemical rounds have a very low muzzle velocity, reducing their effective range but allowing the user to launch them over terrain.
+            </p>
+        </div>
+
+        
+        <ul class="tabs">
+            <button class="tablink" onclick="openPage('he', this, '#171b20')" id="defaultOpen">HE
+                <img src="./img/Icon_rnd_he.png" style="width: 30px;">
+            </button>
+            <button class="tablink" onclick="openPage('heat', this, '#171b20')">HEAT
+                <img src="./img/Icon_rnd_heat.png" style="width: 30px;">
+            </button>
+            <button class="tablink" onclick="openPage('heatfs', this, '#171b20')">HEATFS
+                <img src="./img/Icon_rnd_heatfs.png" style="width: 30px;">
+            </button>
+            <button class="tablink" onclick="openPage('hesh', this, '#171b20')">HESH
+                <img src="./img/Icon_rnd_hesh.png" style="width: 30px;">
+            </button>
+            <button class="tablink" onclick="openPage('smoke', this, '#171b20')">Smoke
+                <img src="./img/Icon_rnd_smoke.png" style="width: 30px;">
+            </button>
+        </ul>
+
+        <div class="tab-content">
+            <div id="he"  class="tabcontent">
+                <h2>High-Explosive (HE)</h2>
+                <p>High-Explosive rounds are primarily intended for use as an anti-infantry/anti-emplacement round, as their destruction power comes from the explosive filler in the shell. As such, HE rounds tend to have minimal armour-piercing capability and are better used against particularly lightly-armoured and open-topped vehicles. On occasion, it can prove effective against the side or roof of some lightly-armoured vehicles. High-calibre HE rounds may cause enough area damage to destroy a tank regardless of the round placement.</p>
+            </div>
+            <div id="heat" class="tabcontent">
+                <h2>High-Explosive, Anti-tank (HEAT)</h2>
+                <p>HEAT rounds are designed specifically as an anti-tank round. They operate with a shaped charge that uses an explosive to force superplastic metal through a vehicle's armour, causing internal damage to crew and modules.</p>
+            </div>
+            <div id="heatfs" class="tabcontent">
+                <h2>High-Explosive, Anti-Tank, Fin-Stabilized (HEATFS)</h2>
+                <p>HEATFS rounds are an improvement over the HEAT concept, using improved penetrative chemicals and utilising fins for improved ballistic performance. HEATFS rounds maintain their penetration values at all ranges, and are well-suited to long-range engagements. HEATFS rounds are particularly sensitive, and may detonate on light obstacles such as shrubs or fences.</p>
+            </div>
+            <div id="hesh" class="tabcontent">
+                <h2>High-Explosive Squash Head (HESH)</h2>
+                <p>HESH rounds are designed as an anti-emplacement round. The squash head, usually comprised of some form of plastic explosive, is designed to squash onto a surface and detonate, causing the opposite side of the surface to rupture. If the given surface happens to be metal, this will often result in metal shards flying off the surface at high velocity. While in the past, HESH rounds have had improved performance on angled targets, their performance is now completely uniform at all ranges and angles. Recently due to the advent of "Overpressure", HESH has benefited an increase in performance and increased lethality, even when failing to hit the target directly. HESH also has relatively low fuse sensitivity, therefore it can be launched through some foliage and weak obstacles without detonating, unlike HE or HEAT.</p>
+            </div>
+            <div id="smoke" class="tabcontent">
+                <h2>Smoke</h2>
+                <p>Smoke shells are not designed as a damaging shell, and largely consist of chemicals designed to create a smoke screen. The produced smoke has a limited lifetime.</p>
+            </div>
+        </div>
+        
+        
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer">
+                <p>Created by Owen Cheung @2023-2024</p>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="./scirpt.js"></script>
+    </body>
+
+    <script>
+    document.getElementById("defaultOpen").click();
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+    </script>
+
+</html>

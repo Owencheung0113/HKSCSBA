@@ -1,4 +1,12 @@
-html {
+  body {
+    margin: 0;
+    padding: 0%;
+    font-family: 'PT Sans', serif;
+    background-color: #2d343c;
+    color: #ffffff;
+  }
+
+  html {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
  }
@@ -9,21 +17,33 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(192, 162, 81);
-    padding: 0 10%;
+    background-color: #1e2828;
+    padding: 0 5%;
  }
  
  .header li {
     display: inline;
-    color:rgb(69, 43, 0);
+    color:rgb(255, 255, 255);
  }
  
  .header .logo {
     flex-grow: 1;
-    color: rgb(69, 43, 0);
-    font-family: 'UnifrakturMaguntia', cursive;
+    color: rgb(255, 255, 255);
     font-size: 1.2rem;
     font-weight: bold;
+    text-decoration: none;
+ }
+
+ .bar {
+    flex-grow: 1;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-right: 1.2rem;
+ }
+
+ .bar:hover {
+  background-color: #ffffff;
+  color: #000000;
  }
 
  /* Banner */
@@ -53,8 +73,9 @@ html {
 
  /* Photo Slideshow */
 .slideshow-container {
+  background-color: #2d343c;
   position: relative;
-  padding-top: 20px;
+  padding-top: 0px;
   }
   
   .prev, .next {
@@ -94,12 +115,14 @@ html {
   to {opacity: 1;}
   }
   
+  .intro {
+    padding: 0 5%;
+  }
 
  .video {
    text-align: center;
    margin-top: 100px;
    color:white ;
-   font-family: 'UnifrakturMaguntia';
    letter-spacing: 0.15rem;
  }
 
@@ -160,7 +183,6 @@ html {
    text-align: center;
    margin-top: 100px;
    color:white ;
-   font-family: 'UnifrakturMaguntia';
    letter-spacing: 0.15rem;
 }
 
@@ -205,32 +227,56 @@ html {
   text-align: center;
    margin-top: 100px;
    color:black ;
-   font-family: 'UnifrakturMaguntia';
    letter-spacing: 0.15rem;
 }
 
-.contact-container {
-
-}
-
-.image-container {
-
-}
-
-.image-container img {
-  width: 300px;
-}
-
-.map-container {
-  filter: hue-rotate(3.142rad);                  
-}
-
 /*footer*/
-.footer-left {
-  color: black;
+.footer {
+  color: #ffffff;
   font-size: 14px;
 }
 
 .social-icons svg {
   fill: black;
+}
+
+/*ammo type*/
+.ammo {
+  padding: 0 10%;
+}
+
+.tabs {
+  background-color: #171b20;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tablink {
+  background-color: #3a474f;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  font-size: 30px;
+  width: 20%;
+}
+
+.tablink:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.tab-content {
+  background-color: #171b20;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: left;
+  padding: 0 10%;
 }
