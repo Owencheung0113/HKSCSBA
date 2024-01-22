@@ -52,31 +52,6 @@
   }
  }
 
- /* Banner */
-/*
- .banner {
-   background: url("../img/discord.jpg");
-   height: 450px;
-   background-size: cover;
-   background-position: center;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   font-family: 'UnifrakturMaguntia';
- }
-
- .banner h1 {
-   /*background-color: ; 
-   width: 100px;
-   text-align: center;
-   color: white;
-   /*margin-top: ;
-   margin-left: ;
-   border-top: ;
-   border-bottom: ;
- }*/
-
  /* Photo Slideshow */
 .slideshow-container {
   background-color: #2d343c;
